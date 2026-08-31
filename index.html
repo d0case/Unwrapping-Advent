@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unwrapping Advent — Gift Edition | A 25-Day Christmas Devotional by Dan Case</title>
+  <meta name="description" content="Unwrapping Advent Gift Edition — a 25-day Christmas devotional by Dan Case, in a 5.5 × 8.5 clothbound hardcover with illustrated dust jacket. $29.95" />
+  <meta name="theme-color" content="#f6f3eb" />
+  <link rel="canonical" href="https://unwrappingadvent.com/" />
+  <meta property="og:type" content="book" />
+  <meta property="og:title" content="Unwrapping Advent — Gift Edition" />
+  <meta property="og:description" content="A 25-day Christmas devotional exploring the gifts Jesus gives you. Clothbound hardcover with illustrated dust jacket." />
+  <meta property="og:image" content="assets/hero-display.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" as="image" href="assets/hero-display.png" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --paper:#f7f4ee;
+      --paper-2:#fcfbf8;
+      --white:#ffffff;
+      --ink:#1f2321;
+      --muted:#5e645f;
+      --line:#ddd7ca;
+      --pine:#173d34;
+      --pine-dark:#112d27;
+      --pine-soft:#e6ece8;
+      --clay:#9f5d42;
+      --serif:"Spectral",Georgia,"Iowan Old Style",Palatino,serif;
+      --sans:"DM Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+      --shadow:0 22px 64px rgba(24,29,27,.11);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{margin:0;background:var(--paper-2);color:var(--ink);font-family:var(--sans);line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    img{display:block;max-width:100%}
+    a{color:inherit}
+    a:hover{color:var(--clay)}
+    .wrap{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+    .eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--clay)}
+    .rule{width:48px;height:2px;background:var(--clay);margin:18px 0 22px}
+    h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;line-height:1.04;letter-spacing:-.035em;color:var(--ink);text-wrap:balance}
+    h1{font-size:clamp(2.6rem,7vw,5.4rem);letter-spacing:-.045em}
+    h2{font-size:clamp(2rem,4.6vw,4.1rem)}
+    h3{font-size:1.35rem;letter-spacing:-.015em}
+    p{margin:0 0 1.15rem;text-wrap:pretty}
+    .section{padding:clamp(64px,9vw,104px) 0}
+    .small{font-size:.86rem;color:var(--muted)}
+    .center{text-align:center}
+    .head-sub{margin-top:.55rem}
+
+    .notice{background:var(--pine-dark);color:#f2efe7;text-align:center;padding:10px 20px;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;line-height:1.5}
+    .site-header{background:rgba(252,251,248,.95);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:blur(10px)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
+    .wordmark{text-decoration:none;font-family:var(--serif);font-size:clamp(.95rem,3vw,1.15rem);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+    .wordmark span{color:var(--clay)}
+    .wordmark:hover{color:inherit}
+    .nav-links{display:flex;align-items:center;gap:26px;font-size:.83rem}
+    .nav-links a{text-decoration:none;color:#434844}
+    .nav-buy{padding:11px 15px;border:1px solid var(--ink);text-transform:uppercase;letter-spacing:.08em;font-size:.7rem!important;font-weight:700;white-space:nowrap}
+    .nav-buy:hover{background:#ece8de;color:var(--ink)}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;border:1px solid var(--ink);padding:16px 22px;font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;transition:.18s ease;background:transparent}
+    .btn-primary{background:var(--pine);border-color:var(--pine);color:#fff}
+    .btn-primary:hover{background:var(--pine-dark);border-color:var(--pine-dark);color:#fff}
+    .btn-secondary:hover{background:#ece8de;color:var(--ink)}
+    .btn-light{background:#fff;border-color:#fff;color:var(--pine)}
+    .btn-light:hover{background:var(--pine-soft);border-color:var(--pine-soft);color:var(--pine)}
+    .actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:26px}
+
+    .hero{background:linear-gradient(180deg,var(--paper) 0%,#f2eee6 100%);border-bottom:1px solid var(--line)}
+    .hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(32px,4vw,44px);align-items:center;padding:clamp(40px,6vw,60px) 0}
+    .hero-copy .kicker{font-family:var(--serif);font-style:italic;color:var(--pine);font-size:clamp(1.05rem,2.2vw,1.2rem);margin:22px 0 24px;max-width:590px}
+    .hero-copy h1{margin-top:14px}
+    .hero-copy p{max-width:600px;color:#4d5450;font-size:clamp(1rem,1.5vw,1.05rem)}
+    .hero-format{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:650px;margin-top:30px}
+    .format-card{background:var(--white);border:1px solid var(--line);padding:18px}
+    .format-card b{display:block;font-family:var(--serif);font-weight:400;font-size:1rem;margin-bottom:4px}
+    .format-card span{font-size:.77rem;color:var(--muted)}
+    /* Hero image: locked to the photo's native 1303×1207 ratio so the book is never cropped. */
+    .hero-image{position:relative;background:#221d17;overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:1303/1207}
+    .hero-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+    .edition-stamp{position:absolute;left:clamp(14px,2vw,24px);bottom:clamp(14px,2vw,24px);background:rgba(251,250,246,.95);padding:16px 18px;border-left:4px solid var(--clay);box-shadow:0 8px 30px rgba(0,0,0,.14);max-width:min(72%,320px)}
+    .edition-stamp b{display:block;font-family:var(--serif);font-weight:400;font-size:1.05rem}
+    .edition-stamp span{display:block;margin-top:2px;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:#60645f;line-height:1.5}
+
+    .quick-buy{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .quick-buy-inner{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;padding:26px 0}
+    .quick-buy-right{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+    .price-tag{font-family:var(--serif);font-size:2rem;line-height:1;color:var(--pine)}
+    .subtle{color:var(--muted);font-size:.95rem}
+
+    .promise{background:var(--white)}
+    .promise-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,6vw,92px);align-items:start}
+    .promise-quote{position:sticky;top:100px}
+    .promise-quote blockquote{font-family:var(--serif);font-weight:300;font-size:clamp(1.85rem,4.4vw,3.4rem);line-height:1.12;margin:0;color:var(--pine);letter-spacing:-.03em;text-wrap:pretty}
+    .promise-quote cite{display:block;margin-top:24px;font-style:normal;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--clay)}
+    .promise-copy{font-size:clamp(1rem,1.5vw,1.08rem);color:#4e554f}
+    .promise-copy .lead{font-family:var(--serif);font-size:clamp(1.3rem,2.4vw,1.6rem);line-height:1.42;color:var(--ink)}
+
+    .inside{background:var(--white)}
+    .inside-head{display:grid;grid-template-columns:1fr .9fr;gap:clamp(28px,5vw,80px);align-items:end;margin-bottom:44px}
+    .inside-head p{color:#59605b;font-size:clamp(1rem,1.5vw,1.04rem);margin:0}
+    .spread{display:grid;grid-template-columns:1.15fr .85fr;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper-2);box-shadow:var(--shadow)}
+    .spread-image{background:#ddd}
+    .spread-image img{width:100%;height:100%;min-height:320px;object-fit:cover}
+    .spread-copy{padding:clamp(34px,4.5vw,58px) clamp(26px,3.6vw,48px);display:flex;flex-direction:column;justify-content:center}
+    .spread-copy h3{font-size:clamp(1.5rem,2.6vw,2rem);margin:10px 0 18px}
+    .spread-copy p{margin:0}
+    .spread-copy ul{list-style:none;padding:0;margin:20px 0 0}
+    .spread-copy li{position:relative;padding:14px 0 14px 28px;border-top:1px solid var(--line);color:#505752}
+    .spread-copy li:before{content:"";position:absolute;left:0;top:21px;width:10px;height:10px;border:2px solid var(--clay);border-radius:50%}
+
+    .lifestyle{background:var(--paper)}
+    .lifestyle-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+    .lifestyle-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#ddd}
+    .lifestyle-photo img{width:100%;height:100%;min-height:340px;object-fit:cover}
+    .lifestyle-copy{padding:clamp(32px,4.4vw,54px) clamp(26px,4vw,52px);background:var(--white);border:1px solid var(--line);border-radius:var(--radius);display:flex;flex-direction:column;justify-content:center}
+    .lifestyle-copy h2{font-size:clamp(1.9rem,3.6vw,3rem)}
+    .lifestyle-copy p{color:#525954;margin:0}
+    .for-list{display:grid;grid-template-columns:1fr 1fr;margin-top:22px;border-top:1px solid var(--line)}
+    .for-item{padding:18px 22px 18px 24px;border-bottom:1px solid var(--line);position:relative;font-size:.9rem;color:#4d554f}
+    .for-item:nth-child(even){border-left:1px solid var(--line);padding-left:44px}
+    .for-item:before{content:"+";position:absolute;left:0;color:var(--clay);font-weight:700}
+    .for-item:nth-child(even):before{left:20px}
+
+    .feature-cards{background:var(--white)}
+    .feature-cards h2{max-width:22ch;margin-inline:auto}
+    .cards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px;text-align:left}
+    .card{border:1px solid var(--line);background:var(--paper-2);padding:28px 24px;border-radius:18px}
+    .card .num{font-family:var(--serif);font-size:2rem;color:var(--clay);line-height:1;margin-bottom:18px}
+    .card h3{font-size:1.28rem;margin-bottom:10px}
+    .card p{font-size:.9rem;color:#626863;margin:0}
+
+    .price-banner{background:var(--pine-dark);color:#fff;text-align:center}
+    .price-banner .wrap{display:flex;justify-content:center;align-items:center;gap:24px;flex-wrap:wrap;padding:28px 0}
+    .price-banner strong{font-family:var(--serif);font-weight:400;font-size:2rem}
+    .price-banner span{color:rgba(255,255,255,.72)}
+
+    .author{background:var(--paper)}
+    .author-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,5vw,78px);align-items:center}
+    .author-photo img{width:100%;height:auto;aspect-ratio:1.2/1;object-fit:cover;object-position:center 24%;box-shadow:var(--shadow);border-radius:var(--radius)}
+    .author-copy h2{font-size:clamp(2rem,4.2vw,3.6rem)}
+    .author-copy p{color:#515853;font-size:clamp(1rem,1.5vw,1.02rem)}
+    .author-copy .bio-lead{font-family:var(--serif);font-size:clamp(1.25rem,2.2vw,1.5rem);line-height:1.43;color:var(--ink)}
+
+    .faq{background:var(--white);border-top:1px solid var(--line)}
+    .faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(32px,5vw,80px);align-items:start}
+    .faq h2{font-size:clamp(2rem,4.2vw,3.6rem)}
+    details{border-top:1px solid var(--line);padding:20px 0}
+    details:last-of-type{border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;font-family:var(--serif);font-size:1.22rem;list-style:none;display:flex;justify-content:space-between;gap:20px}
+    summary::-webkit-details-marker{display:none}
+    summary:after{content:"+";font-family:var(--sans);font-weight:400;color:var(--clay)}
+    details[open] summary:after{content:"–"}
+    details p{color:#626964;font-size:.92rem;max-width:720px;margin:14px 42px 0 0}
+
+    .buy{background:var(--pine);color:#fff;text-align:center}
+    .buy h2{color:#fff;max-width:880px;margin:14px auto 22px;font-size:clamp(2.1rem,4.8vw,4.2rem)}
+    .buy > .wrap > p{max-width:740px;margin:0 auto;color:rgba(255,255,255,.74)}
+    .buy .eyebrow{color:#d8b8a9}
+    .buy-box{width:min(920px,100%);margin:42px auto 0;background:#fff;color:var(--ink);display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;text-align:left;padding:26px 28px;border-radius:20px}
+    .buy-box-info{flex:1 1 280px}
+    .buy-box b{font-family:var(--serif);font-size:1.28rem;font-weight:400}
+    .buy-box span{display:block;color:#6a716c;font-size:.82rem;margin-top:4px}
+    .buy-price{font-family:var(--serif);font-size:2rem;color:var(--pine)}
+
+    footer{background:#111512;color:#d6d8d5;padding:28px 0;font-size:.76rem}
+    .footer-inner{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+    .mobile-bar{display:none}
+
+    /* ── Breakpoints ─────────────────────────────────────────────
+       1180px  large tablet / small laptop — tighten gutters
+       1000px  tablet portrait — two-column layouts go single
+        720px  phone landscape / large phone — one column, sticky buy bar
+        480px  small phone — tighter padding, smaller buttons
+       ───────────────────────────────────────────────────────────── */
+    @media (max-width: 1180px){
+      .wrap{width:calc(100% - 48px)}
+      .promise-quote{top:92px}
+    }
+    @media (max-width: 1000px){
+      .wrap{width:calc(100% - 40px)}
+      .hero-grid,.promise-grid,.inside-head,.lifestyle-grid,.author-grid,.faq-grid{grid-template-columns:1fr}
+      .hero-grid{gap:36px}
+      .promise-quote{position:static}
+      .promise-quote blockquote{max-width:22ch}
+      .cards-grid{grid-template-columns:1fr 1fr}
+      .spread{grid-template-columns:1fr}
+      .lifestyle-photo img{min-height:400px}
+      .author-photo{max-width:560px}
+      .author-photo img{aspect-ratio:1.5/1}
+    }
+    @media (max-width: 860px){
+      .nav-links{gap:18px;font-size:.79rem}
+    }
+    @media (max-width: 720px){
+      .wrap{width:calc(100% - 36px)}
+      .notice{font-size:.63rem;letter-spacing:.09em;padding:9px 16px}
+      .nav-links a:not(.nav-buy){display:none}
+      .nav{min-height:64px}
+      .hero-grid{padding-top:32px;padding-bottom:36px}
+      .hero-format,.cards-grid,.for-list{grid-template-columns:1fr}
+      .hero-copy .kicker{margin:18px 0 20px}
+      .for-item,.for-item:nth-child(even){border-left:0;padding-left:24px}
+      .for-item:nth-child(even):before{left:0}
+      .quick-buy-inner,.quick-buy-right,.buy-box{flex-direction:column;align-items:flex-start}
+      .quick-buy-right{gap:14px;width:100%}
+      .quick-buy-inner .btn,.buy-box .btn,.actions .btn{width:100%}
+      .buy-box{text-align:left}
+      .buy-box-info{flex:1 1 auto}
+      .price-banner .wrap{gap:14px;flex-direction:column}
+      .lifestyle-photo img{min-height:300px}
+      .spread-image img{min-height:240px}
+      .details-safe,details p{margin-right:0}
+      .footer-inner{flex-direction:column;gap:8px}
+      .mobile-bar{display:block;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px 14px;z-index:60;padding-bottom:calc(10px + env(safe-area-inset-bottom))}
+      .mobile-bar .btn{width:100%}
+      body{padding-bottom:calc(78px + env(safe-area-inset-bottom))}
+    }
+    @media (max-width: 480px){
+      .wrap{width:calc(100% - 32px)}
+      .section{padding:52px 0}
+      .btn{padding:15px 16px;font-size:.72rem}
+      .spread-copy,.lifestyle-copy{padding:30px 22px}
+      .card{padding:24px 20px}
+      .buy-box{padding:22px 20px}
+      .edition-stamp{padding:12px 14px;max-width:min(84%,280px)}
+      .edition-stamp b{font-size:.95rem}
+      .edition-stamp span{font-size:.62rem}
+      summary{font-size:1.08rem}
+    }
+    @media (prefers-reduced-motion: reduce){
+      html{scroll-behavior:auto}
+      *{transition:none!important}
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">Premium Gift Edition · 5.5 × 8.5 Clothbound Hardcover + Dust Jacket · $29.95</div>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="wordmark" href="#top">Unwrapping <span>Advent</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#inside">Inside</a>
+        <a href="#author">Author</a>
+        <a class="nav-buy purchase-link" href="#buy">Buy · $29.95</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">A 25-Day Christmas Devotional</div>
+          <h1>Unwrap the gifts Jesus gives you.</h1>
+          <div class="kicker">A meaningful Advent journey for the heart—and a beautiful book made to be given.</div>
+          <p>Slow down through December with 25 Scripture-rooted reflections on hope, grace, peace, forgiveness, God’s presence, and the greatest gift beneath them all: Jesus Himself.</p>
+          <div class="actions">
+            <a class="btn btn-primary purchase-link" href="#buy">Buy the Gift Edition · $29.95</a>
+            <a class="btn btn-secondary" href="#inside">See Inside the Book</a>
+          </div>
+          <div class="hero-format" aria-label="Gift edition features">
+            <div class="format-card"><b>25 Daily Readings</b><span>December 1–25 devotional journey</span></div>
+            <div class="format-card"><b>Premium Gift Edition</b><span>Beautiful 5.5 × 8.5 keepsake format</span></div>
+            <div class="format-card"><b>Cloth + Jacket</b><span>Made to be wrapped, given, and kept</span></div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero-display.png" width="1303" height="1207" alt="Unwrapping Advent Gift Edition standing on a wood table beside a stack of copies, candlelight, and Christmas greenery" />
+          <div class="edition-stamp"><b>The Gift Edition</b><span>A premium edition created for Christmas giving</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-buy" aria-label="Quick purchase callout">
+      <div class="wrap quick-buy-inner">
+        <div>
+          <div class="eyebrow">Gift Edition Pricing</div>
+          <div class="rule"></div>
+          <div class="subtle">Clothbound hardcover · illustrated dust jacket · original interior artwork</div>
+        </div>
+        <div class="quick-buy-right">
+          <div class="price-tag">$29.95</div>
+          <a class="btn btn-primary purchase-link" href="#buy">Purchase Gift Edition</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section promise" id="about">
+      <div class="wrap promise-grid">
+        <div class="promise-quote">
+          <blockquote>“What we are looking for is not the feeling. It is the Person behind it.”</blockquote>
+          <cite>From Unwrapping Advent</cite>
+        </div>
+        <div class="promise-copy">
+          <div class="eyebrow">A different kind of December</div>
+          <div class="rule"></div>
+          <p class="lead">Christmas can be full of beautiful things and still leave us feeling like we missed something.</p>
+          <p>Every year we decorate, shop, plan, gather, and count down. The season can become so full that the Person at the center of it quietly slips to the edges.</p>
+          <p><em>Unwrapping Advent</em> is a 25-day devotional created to help you slow down and look again. Each day “unwraps” a gift found in who Christ is and what He has done—gifts like hope, promise, faith, grace, peace, forgiveness, and His presence.</p>
+          <p>The journey begins with God’s promises, moves toward the arrival of Christ, follows His nearness into ordinary life, and looks ahead to the cross, resurrection, and the future secured in Him. The goal is not to manufacture a better Christmas mood. It is to receive what lasts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section inside" id="inside">
+      <div class="wrap">
+        <div class="inside-head">
+          <div>
+            <div class="eyebrow">Inside the book</div>
+            <h2 class="head-sub">A daily rhythm that gives December room to breathe.</h2>
+          </div>
+          <p>Each reading is designed to be substantial enough to stay with you and simple enough to become part of a quiet morning, evening by the tree, family Advent rhythm, or personal devotional time.</p>
+        </div>
+        <div class="spread">
+          <div class="spread-image"><img src="assets/interior-spread.png" width="1586" height="992" loading="lazy" alt="Open Unwrapping Advent pages featuring The Gift of Hope illustration" /></div>
+          <div class="spread-copy">
+            <div class="eyebrow">December 1 · The Gift of Hope</div>
+            <h3>Thoughtful writing. Scripture. Prayer. Original art.</h3>
+            <p>The devotional combines personal stories with biblical reflection to help familiar truths land with fresh weight in the middle of real life.</p>
+            <ul>
+              <li>A focused theme for each day</li>
+              <li>Scripture woven into the reflection</li>
+              <li>Original black-and-white illustrations</li>
+              <li>A closing prayer that turns the reading toward God</li>
+            </ul>
+            <div class="actions"><a class="btn btn-primary purchase-link" href="#buy">Purchase Gift Edition · $29.95</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lifestyle">
+      <div class="wrap lifestyle-grid">
+        <div class="lifestyle-photo"><img src="assets/morning-reading.png" width="1448" height="1086" loading="lazy" alt="Woman reading Unwrapping Advent in a quiet Christmas setting" /></div>
+        <div class="lifestyle-copy">
+          <div class="eyebrow">A quieter Christmas</div>
+          <h2 class="head-sub">Make a little room for what matters most.</h2>
+          <div class="rule"></div>
+          <p>Advent has a way of slowing a rushed season down. A chair. A warm drink. A few pages. A prayer. The Gift Edition is designed to become part of that rhythm—and beautiful enough to sit beside the tree all month.</p>
+          <div class="for-list">
+            <div class="for-item">For your own morning devotional</div>
+            <div class="for-item">For a spouse or close friend</div>
+            <div class="for-item">For parents and grandparents</div>
+            <div class="for-item">For pastors, teachers, and mentors</div>
+            <div class="for-item">For a family Advent tradition</div>
+            <div class="for-item">For someone who needs hope this season</div>
+          </div>
+          <div class="actions"><a class="btn btn-secondary purchase-link" href="#buy">Get the Gift Edition</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature-cards">
+      <div class="wrap center">
+        <div class="eyebrow">What you receive</div>
+        <h2 class="head-sub">One book. Twenty-five invitations to slow down.</h2>
+        <div class="cards-grid">
+          <div class="card"><div class="num">01</div><h3>25 daily devotionals</h3><p>One reading per day for December 1 through Christmas Day.</p></div>
+          <div class="card"><div class="num">02</div><h3>Original illustrations</h3><p>Woodcut-inspired black-and-white art created for the devotional.</p></div>
+          <div class="card"><div class="num">03</div><h3>Gift-quality format</h3><p>A clothbound hardcover with a dust jacket worthy of wrapping and giving.</p></div>
+          <div class="card"><div class="num">04</div><h3>Hope-filled substance</h3><p>Scripture, reflection, and prayer that point again and again to Christ.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="price-banner">
+      <div class="wrap">
+        <strong>$29.95</strong>
+        <span>Premium Gift Edition · Clothbound hardcover with illustrated dust jacket</span>
+        <a class="btn btn-light purchase-link" href="#buy">Purchase</a>
+      </div>
+    </section>
+
+    <section class="section author" id="author">
+      <div class="wrap author-grid">
+        <div class="author-photo"><img src="assets/dan-case-author.png" width="1280" height="720" loading="lazy" alt="Author Dan Case" /></div>
+        <div class="author-copy">
+          <div class="eyebrow">About the author</div>
+          <h2 class="head-sub">Dan Case</h2>
+          <div class="rule"></div>
+          <p class="bio-lead">“I am not a pastor. I do not lead a church. I am simply a man trying to follow Jesus in the steady noise of everyday life.”</p>
+          <p>Dan has spent more than twenty-three years working in advertising as a creative professional. He is a husband and father of four, and his writing grows out of the intersection of Scripture, ordinary family life, creative work, and a desire to pay closer attention to what God is doing beneath the surface.</p>
+          <p><em>Unwrapping Advent</em> grew from his family’s own December tradition: gathering together, lighting candles, reading Scripture, singing carols, and learning that slowing down can steady a season that otherwise moves too quickly.</p>
+          <p>His hope for the book is simple—that it gives readers permission to slow down, listen, notice what they might otherwise walk past, and turn their hearts again toward Christ.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="wrap faq-grid">
+        <div>
+          <div class="eyebrow">Questions</div>
+          <h2 class="head-sub">About this edition</h2>
+          <div class="rule"></div>
+          <p class="small">Questions about an order or a bulk purchase? Reach out to the publisher at <a href="mailto:hello@tomeify.com">hello@tomeify.com</a>.</p>
+        </div>
+        <div>
+          <details open><summary>Is this the same version sold on Amazon?</summary><p>No. Softcover, Kindle, and standard hardcover editions are planned for Amazon KDP. This page is specifically for the premium Gift Edition, with a clothbound hardcover and illustrated dust jacket.</p></details>
+          <details><summary>What does the Gift Edition cost?</summary><p>The Premium Gift Edition is priced at <strong>$29.95</strong>.</p></details>
+          <details><summary>When should I begin reading?</summary><p>The main devotional journey runs December 1 through December 25, one reading per day, leading into Christmas Day.</p></details>
+          <details><summary>Is it meant for individuals or families?</summary><p>Both. The writing works as a personal devotional, while the 25-day structure also makes it easy to build into a household Advent tradition or small-group rhythm.</p></details>
+          <details><summary>Where do I order it?</summary><p>Every purchase button on this page leads to the same checkout. Order early in the season to have the book in hand before December 1.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section buy" id="buy">
+      <div class="wrap">
+        <div class="eyebrow">This Christmas</div>
+        <h2>Give a book that opens something new every day.</h2>
+        <p>Bring <em>Unwrapping Advent</em> into your home this December—or give it to someone you love as an invitation to slow down, draw near, and rediscover the gifts Christ has already given.</p>
+        <div class="buy-box">
+          <div class="buy-box-info"><b>Unwrapping Advent · Premium Gift Edition</b><span>5.5 × 8.5 clothbound hardcover · illustrated dust jacket · 25-day devotional</span></div>
+          <div class="buy-price">$29.95</div>
+          <a class="btn btn-primary purchase-link" href="#buy">Buy the Gift Edition</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner"><span>© 2026 Dan Case. All rights reserved.</span><span>Unwrapping Advent · Gift Edition</span></div>
+  </footer>
+
+  <div class="mobile-bar"><a class="btn btn-primary purchase-link" href="#buy">Buy Gift Edition · $29.95</a></div>
+
+  <script>
+    /* ─────────────────────────────────────────────────────────────
+       SHOPIFY CHECKOUT LINK
+       Paste your Shopify product or cart URL between the quotes.
+       Every "Buy" button on the page will point to it automatically.
+       Leave it empty and the buttons just scroll down to the buy section.
+       ───────────────────────────────────────────────────────────── */
+    const PURCHASE_URL = "";
+
+    if (PURCHASE_URL) {
+      document.querySelectorAll('.purchase-link').forEach(function (link) {
+        link.href = PURCHASE_URL;
+        link.target = "_blank";
+        link.rel = "noopener";
+      });
+    }
+  </script>
+</body>
+</html>
