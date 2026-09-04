@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Unwrapping Advent — Gift Edition | A 25-Day Christmas Devotional by Dan Case</title>
-  <meta name="description" content="Unwrapping Advent Gift Edition — a 25-day Christmas devotional by Dan Case, in a 5.5 × 8.5 clothbound hardcover with illustrated dust jacket. $29.95" />
+  <title>Unwrapping Advent | A 25-Day Christmas Devotional by Dan Case</title>
+  <meta name="description" content="Unwrapping Advent — a 25-day Christmas devotional by Dan Case. Available on Amazon in Kindle, paperback, and hardcover." />
   <meta name="theme-color" content="#f6f3eb" />
   <link rel="canonical" href="https://unwrappingadvent.com/" />
   <meta property="og:type" content="book" />
-  <meta property="og:title" content="Unwrapping Advent — Gift Edition" />
-  <meta property="og:description" content="A 25-day Christmas devotional exploring the gifts Jesus gives you. Clothbound hardcover with illustrated dust jacket." />
+  <meta property="og:title" content="Unwrapping Advent — A 25-Day Christmas Devotional" />
+  <meta property="og:description" content="A 25-day Christmas devotional exploring the gifts Jesus gives you. On Amazon in Kindle, paperback, and hardcover." />
   <meta property="og:image" content="assets/hero-display.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preload" as="image" href="assets/hero-display.png" fetchpriority="high" />
@@ -90,7 +90,8 @@
     .quick-buy{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
     .quick-buy-inner{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;padding:26px 0}
     .quick-buy-right{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
-    .price-tag{font-family:var(--serif);font-size:2rem;line-height:1;color:var(--pine)}
+    .format-pills{display:flex;gap:8px;flex-wrap:wrap}
+    .format-pills span{border:1px solid var(--line);background:var(--paper-2);padding:8px 13px;font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--pine);border-radius:999px}
     .subtle{color:var(--muted);font-size:.95rem}
 
     .promise{background:var(--white)}
@@ -120,6 +121,22 @@
     .lifestyle-photo img{width:100%;height:100%;min-height:340px;object-fit:cover}
     .lifestyle-copy{padding:clamp(32px,4.4vw,54px) clamp(26px,4vw,52px);background:var(--white);border:1px solid var(--line);border-radius:var(--radius);display:flex;flex-direction:column;justify-content:center}
     .lifestyle-copy h2{font-size:clamp(1.9rem,3.6vw,3rem)}
+    .reviews{background:var(--pine-dark);color:#f1eee6}
+    .reviews .eyebrow{color:#c8a87c}
+    .reviews h2{color:#f6f3ec}
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:clamp(34px,4.4vw,52px)}
+    .review{border:1px solid rgba(241,238,230,.2);border-radius:var(--radius);padding:clamp(24px,2.8vw,36px);display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+    .review p{font-family:var(--serif);font-size:clamp(1.08rem,1.5vw,1.32rem);line-height:1.42;letter-spacing:-.015em;margin:0;text-wrap:pretty}
+    .review cite{font-style:normal;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.6}
+    .review-lead{grid-column:span 2;background:rgba(241,238,230,.06)}
+    .review-lead p{font-size:clamp(1.4rem,2.5vw,2.15rem);line-height:1.24}
+    .review-wide{grid-column:span 2}
+    .flatlay{padding:0;background:var(--ink)}
+    .flatlay figure{margin:0;position:relative}
+    .flatlay img{display:block;width:100%;height:auto;aspect-ratio:1448/1086;object-fit:cover;object-position:center 40%}
+    .flatlay figcaption{position:absolute;left:0;right:0;bottom:0;padding:clamp(26px,4vw,48px);background:linear-gradient(to top,rgba(0,0,0,.66),rgba(0,0,0,0));color:#fff;text-align:center}
+    .flatlay figcaption strong{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(1.35rem,2.6vw,2.1rem);letter-spacing:.01em}
+    .flatlay figcaption span{display:block;margin-top:8px;font-size:clamp(.92rem,1.2vw,1.05rem);opacity:.82}
     .lifestyle-copy p{color:#525954;margin:0}
     .for-list{display:grid;grid-template-columns:1fr 1fr;margin-top:22px;border-top:1px solid var(--line)}
     .for-item{padding:18px 22px 18px 24px;border-bottom:1px solid var(--line);position:relative;font-size:.9rem;color:#4d554f}
@@ -166,7 +183,6 @@
     .buy-box-info{flex:1 1 280px}
     .buy-box b{font-family:var(--serif);font-size:1.28rem;font-weight:400}
     .buy-box span{display:block;color:#6a716c;font-size:.82rem;margin-top:4px}
-    .buy-price{font-family:var(--serif);font-size:2rem;color:var(--pine)}
 
     footer{background:#111512;color:#d6d8d5;padding:28px 0;font-size:.76rem}
     .footer-inner{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
@@ -189,6 +205,8 @@
       .promise-quote{position:static}
       .promise-quote blockquote{max-width:22ch}
       .cards-grid{grid-template-columns:1fr 1fr}
+      .reviews-grid{grid-template-columns:1fr 1fr}
+      .review-lead,.review-wide,.reviews-grid .review[style]{grid-column:span 2!important}
       .spread{grid-template-columns:1fr}
       .lifestyle-photo img{min-height:400px}
       .author-photo{max-width:560px}
@@ -214,6 +232,8 @@
       .buy-box-info{flex:1 1 auto}
       .price-banner .wrap{gap:14px;flex-direction:column}
       .lifestyle-photo img{min-height:300px}
+      .reviews-grid{grid-template-columns:1fr}
+      .review-lead,.review-wide,.reviews-grid .review[style]{grid-column:span 1!important}
       .spread-image img{min-height:240px}
       .details-safe,details p{margin-right:0}
       .footer-inner{flex-direction:column;gap:8px}
@@ -240,7 +260,7 @@
   </style>
 </head>
 <body>
-  <div class="notice">Premium Gift Edition · 5.5 × 8.5 Clothbound Hardcover + Dust Jacket · $29.95</div>
+  <div class="notice">Now available on Amazon · Kindle · Paperback · Hardcover</div>
 
   <header class="site-header">
     <div class="wrap nav">
@@ -249,7 +269,7 @@
         <a href="#about">About</a>
         <a href="#inside">Inside</a>
         <a href="#author">Author</a>
-        <a class="nav-buy purchase-link" href="#buy">Buy · $29.95</a>
+        <a class="nav-buy purchase-link" href="#buy">Buy on Amazon</a>
       </nav>
     </div>
   </header>
@@ -263,18 +283,18 @@
           <div class="kicker">A meaningful Advent journey for the heart—and a beautiful book made to be given.</div>
           <p>Slow down through December with 25 Scripture-rooted reflections on hope, grace, peace, forgiveness, God’s presence, and the greatest gift beneath them all: Jesus Himself.</p>
           <div class="actions">
-            <a class="btn btn-primary purchase-link" href="#buy">Buy the Gift Edition · $29.95</a>
+            <a class="btn btn-primary purchase-link" href="#buy">Buy on Amazon</a>
             <a class="btn btn-secondary" href="#inside">See Inside the Book</a>
           </div>
-          <div class="hero-format" aria-label="Gift edition features">
+          <div class="hero-format" aria-label="Available formats">
             <div class="format-card"><b>25 Daily Readings</b><span>December 1–25 devotional journey</span></div>
-            <div class="format-card"><b>Premium Gift Edition</b><span>Beautiful 5.5 × 8.5 keepsake format</span></div>
-            <div class="format-card"><b>Cloth + Jacket</b><span>Made to be wrapped, given, and kept</span></div>
+            <div class="format-card"><b>Three Formats</b><span>Kindle, paperback, and hardcover</span></div>
+            <div class="format-card"><b>5.5 × 8.5 Print</b><span>A size made for gifting and keeping</span></div>
           </div>
         </div>
         <div class="hero-image">
-          <img src="assets/hero-display.png" width="1303" height="1207" alt="Unwrapping Advent Gift Edition standing on a wood table beside a stack of copies, candlelight, and Christmas greenery" />
-          <div class="edition-stamp"><b>The Gift Edition</b><span>A premium edition created for Christmas giving</span></div>
+          <img src="assets/hero-display.png" width="1303" height="1207" alt="Unwrapping Advent standing on a wood table beside a stack of copies, candlelight, and Christmas greenery" />
+          <div class="edition-stamp"><b>Available on Amazon</b><span>Kindle · Paperback · Hardcover</span></div>
         </div>
       </div>
     </section>
@@ -282,13 +302,13 @@
     <section class="quick-buy" aria-label="Quick purchase callout">
       <div class="wrap quick-buy-inner">
         <div>
-          <div class="eyebrow">Gift Edition Pricing</div>
+          <div class="eyebrow">Available now on Amazon</div>
           <div class="rule"></div>
-          <div class="subtle">Clothbound hardcover · illustrated dust jacket · original interior artwork</div>
+          <div class="subtle">Kindle · 5.5 × 8.5 paperback · hardcover · original interior artwork</div>
         </div>
         <div class="quick-buy-right">
-          <div class="price-tag">$29.95</div>
-          <a class="btn btn-primary purchase-link" href="#buy">Purchase Gift Edition</a>
+          <div class="format-pills"><span>Kindle</span><span>Paperback</span><span>Hardcover</span></div>
+          <a class="btn btn-primary purchase-link" href="#buy">Buy on Amazon</a>
         </div>
       </div>
     </section>
@@ -320,7 +340,7 @@
           <p>Each reading is designed to be substantial enough to stay with you and simple enough to become part of a quiet morning, evening by the tree, family Advent rhythm, or personal devotional time.</p>
         </div>
         <div class="spread">
-          <div class="spread-image"><img src="assets/interior-spread.png" width="1586" height="992" loading="lazy" alt="Open Unwrapping Advent pages featuring The Gift of Hope illustration" /></div>
+          <div class="spread-image"><img src="assets/interior-spread.png" width="1586" height="992" loading="lazy" alt="Open Unwrapping Advent showing December 8, The Gift of Grace, beside the hardcover edition by candlelight" /></div>
           <div class="spread-copy">
             <div class="eyebrow">December 1 · The Gift of Hope</div>
             <h3>Thoughtful writing. Scripture. Prayer. Original art.</h3>
@@ -331,7 +351,7 @@
               <li>Original black-and-white illustrations</li>
               <li>A closing prayer that turns the reading toward God</li>
             </ul>
-            <div class="actions"><a class="btn btn-primary purchase-link" href="#buy">Purchase Gift Edition · $29.95</a></div>
+            <div class="actions"><a class="btn btn-primary purchase-link" href="#buy">Buy on Amazon</a></div>
           </div>
         </div>
       </div>
@@ -344,7 +364,7 @@
           <div class="eyebrow">A quieter Christmas</div>
           <h2 class="head-sub">Make a little room for what matters most.</h2>
           <div class="rule"></div>
-          <p>Advent has a way of slowing a rushed season down. A chair. A warm drink. A few pages. A prayer. The Gift Edition is designed to become part of that rhythm—and beautiful enough to sit beside the tree all month.</p>
+          <p>Advent has a way of slowing a rushed season down. A chair. A warm drink. A few pages. A prayer. The book is made to become part of that rhythm—and to sit beside the tree all month.</p>
           <div class="for-list">
             <div class="for-item">For your own morning devotional</div>
             <div class="for-item">For a spouse or close friend</div>
@@ -353,7 +373,7 @@
             <div class="for-item">For a family Advent tradition</div>
             <div class="for-item">For someone who needs hope this season</div>
           </div>
-          <div class="actions"><a class="btn btn-secondary purchase-link" href="#buy">Get the Gift Edition</a></div>
+          <div class="actions"><a class="btn btn-secondary purchase-link" href="#buy">Find It on Amazon</a></div>
         </div>
       </div>
     </section>
@@ -365,17 +385,54 @@
         <div class="cards-grid">
           <div class="card"><div class="num">01</div><h3>25 daily devotionals</h3><p>One reading per day for December 1 through Christmas Day.</p></div>
           <div class="card"><div class="num">02</div><h3>Original illustrations</h3><p>Woodcut-inspired black-and-white art created for the devotional.</p></div>
-          <div class="card"><div class="num">03</div><h3>Gift-quality format</h3><p>A clothbound hardcover with a dust jacket worthy of wrapping and giving.</p></div>
+          <div class="card"><div class="num">03</div><h3>Three ways to read</h3><p>Kindle, paperback, and hardcover—read it your way or give it as a gift.</p></div>
           <div class="card"><div class="num">04</div><h3>Hope-filled substance</h3><p>Scripture, reflection, and prayer that point again and again to Christ.</p></div>
         </div>
       </div>
     </section>
 
+    <section class="section reviews">
+      <div class="wrap">
+        <div class="center">
+          <div class="eyebrow">Reader reviews</div>
+          <h2 class="head-sub">What readers are saying.</h2>
+        </div>
+        <div class="reviews-grid">
+          <blockquote class="review review-lead">
+            <p>“This advent book is a beautiful reminder of what Christmas is truly about.”</p>
+            <cite>Amazon review</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>“I loved this book.”</p>
+            <cite>Amazon review</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>“It's gospel-centered, it's well-paced, and it turns your eyes and your heart to focus on Jesus”</p>
+            <cite>Amazon review</cite>
+          </blockquote>
+          <blockquote class="review review-wide">
+            <p>“In a time of year that can be overwhelming with the hustle and bustle, his devotions would be a great addition to help you slow down and savor the season.”</p>
+            <cite>Amazon review</cite>
+          </blockquote>
+          <blockquote class="review" style="grid-column:span 3">
+            <p>"I will be bringing this to our family this year and this will be what we read each night. "</p>
+            <cite>Amazon review</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flatlay">
+      <figure>
+        <img src="assets/cover-flatlay.png" width="1448" height="1086" loading="lazy" alt="Unwrapping Advent hardcover on a wood table with coffee, a candle, ribbon, and evergreen sprigs" />
+      </figure>
+    </section>
+
     <section class="price-banner">
       <div class="wrap">
-        <strong>$29.95</strong>
-        <span>Premium Gift Edition · Clothbound hardcover with illustrated dust jacket</span>
-        <a class="btn btn-light purchase-link" href="#buy">Purchase</a>
+        <strong>Three formats</strong>
+        <span>Kindle, paperback, and hardcover — all on one Amazon listing</span>
+        <a class="btn btn-light purchase-link" href="#buy">Buy on Amazon</a>
       </div>
     </section>
 
@@ -386,7 +443,6 @@
           <div class="eyebrow">About the author</div>
           <h2 class="head-sub">Dan Case</h2>
           <div class="rule"></div>
-          <p class="bio-lead">“I am not a pastor. I do not lead a church. I am simply a man trying to follow Jesus in the steady noise of everyday life.”</p>
           <p>Dan has spent more than twenty-three years working in advertising as a creative professional. He is a husband and father of four, and his writing grows out of the intersection of Scripture, ordinary family life, creative work, and a desire to pay closer attention to what God is doing beneath the surface.</p>
           <p><em>Unwrapping Advent</em> grew from his family’s own December tradition: gathering together, lighting candles, reading Scripture, singing carols, and learning that slowing down can steady a season that otherwise moves too quickly.</p>
           <p>His hope for the book is simple—that it gives readers permission to slow down, listen, notice what they might otherwise walk past, and turn their hearts again toward Christ.</p>
@@ -403,11 +459,11 @@
           <p class="small">Questions about an order or a bulk purchase? Reach out to the publisher at <a href="mailto:hello@tomeify.com">hello@tomeify.com</a>.</p>
         </div>
         <div>
-          <details open><summary>Is this the same version sold on Amazon?</summary><p>No. Softcover, Kindle, and standard hardcover editions are planned for Amazon KDP. This page is specifically for the premium Gift Edition, with a clothbound hardcover and illustrated dust jacket.</p></details>
-          <details><summary>What does the Gift Edition cost?</summary><p>The Premium Gift Edition is priced at <strong>$29.95</strong>.</p></details>
+          <details open><summary>Which formats are available?</summary><p>Three: Kindle, paperback, and hardcover. All three are on the same Amazon listing—choose your format there.</p></details>
+          <details><summary>Where can I buy it?</summary><p>Every button on this page goes to the book’s Amazon listing, where current pricing and delivery estimates are shown.</p></details>
           <details><summary>When should I begin reading?</summary><p>The main devotional journey runs December 1 through December 25, one reading per day, leading into Christmas Day.</p></details>
           <details><summary>Is it meant for individuals or families?</summary><p>Both. The writing works as a personal devotional, while the 25-day structure also makes it easy to build into a household Advent tradition or small-group rhythm.</p></details>
-          <details><summary>Where do I order it?</summary><p>Every purchase button on this page leads to the same checkout. Order early in the season to have the book in hand before December 1.</p></details>
+          <details><summary>Can I give it as a gift?</summary><p>Yes. The paperback and hardcover both work well as gifts, and Amazon can ship directly to the recipient. Order early in the season to have the book in hand before December 1.</p></details>
         </div>
       </div>
     </section>
@@ -418,28 +474,26 @@
         <h2>Give a book that opens something new every day.</h2>
         <p>Bring <em>Unwrapping Advent</em> into your home this December—or give it to someone you love as an invitation to slow down, draw near, and rediscover the gifts Christ has already given.</p>
         <div class="buy-box">
-          <div class="buy-box-info"><b>Unwrapping Advent · Premium Gift Edition</b><span>5.5 × 8.5 clothbound hardcover · illustrated dust jacket · 25-day devotional</span></div>
-          <div class="buy-price">$29.95</div>
-          <a class="btn btn-primary purchase-link" href="#buy">Buy the Gift Edition</a>
+          <div class="buy-box-info"><b>Unwrapping Advent · A 25-Day Christmas Devotional</b><span>Kindle · 5.5 × 8.5 paperback · hardcover</span></div>
+          <a class="btn btn-primary purchase-link" href="#buy">Buy on Amazon</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap footer-inner"><span>© 2026 Dan Case. All rights reserved.</span><span>Unwrapping Advent · Gift Edition</span></div>
+    <div class="wrap footer-inner"><span>© 2026 Dan Case. All rights reserved.</span><span>Unwrapping Advent · Available on Amazon</span></div>
   </footer>
 
-  <div class="mobile-bar"><a class="btn btn-primary purchase-link" href="#buy">Buy Gift Edition · $29.95</a></div>
+  <div class="mobile-bar"><a class="btn btn-primary purchase-link" href="#buy">Buy on Amazon</a></div>
 
   <script>
     /* ─────────────────────────────────────────────────────────────
-       SHOPIFY CHECKOUT LINK
-       Paste your Shopify product or cart URL between the quotes.
-       Every "Buy" button on the page will point to it automatically.
+       AMAZON LISTING LINK
+       Every "Buy" button on the page points to this URL.
        Leave it empty and the buttons just scroll down to the buy section.
        ───────────────────────────────────────────────────────────── */
-    const PURCHASE_URL = "";
+    const PURCHASE_URL = "https://www.amazon.com/dp/B0HGZLNGVS";
 
     if (PURCHASE_URL) {
       document.querySelectorAll('.purchase-link').forEach(function (link) {
