@@ -159,7 +159,7 @@
 
     .author{background:var(--paper)}
     .author-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,5vw,78px);align-items:center}
-    .author-photo img{width:100%;height:auto;aspect-ratio:1.2/1;object-fit:cover;object-position:center 24%;box-shadow:var(--shadow);border-radius:var(--radius)}
+    .author-photo img{width:100%;max-width:320px;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:center 22%;box-shadow:var(--shadow);border-radius:50%}
     .author-copy h2{font-size:clamp(2rem,4.2vw,3.6rem)}
     .author-copy p{color:#515853;font-size:clamp(1rem,1.5vw,1.02rem)}
     .author-copy .bio-lead{font-family:var(--serif);font-size:clamp(1.25rem,2.2vw,1.5rem);line-height:1.43;color:var(--ink)}
@@ -209,8 +209,7 @@
       .review-lead,.review-wide,.reviews-grid .review[style]{grid-column:span 2!important}
       .spread{grid-template-columns:1fr}
       .lifestyle-photo img{min-height:400px}
-      .author-photo{max-width:560px}
-      .author-photo img{aspect-ratio:1.5/1}
+      .author-photo img{max-width:260px}
     }
     @media (max-width: 860px){
       .nav-links{gap:18px;font-size:.79rem}
@@ -359,7 +358,7 @@
 
     <section class="section lifestyle">
       <div class="wrap lifestyle-grid">
-        <div class="lifestyle-photo"><img src="assets/morning-reading.png" width="1448" height="1086" loading="lazy" alt="Woman reading Unwrapping Advent in a quiet Christmas setting" /></div>
+        <div class="lifestyle-photo"><img src="assets/morning-reading.png" width="1024" height="1536" loading="lazy" alt="Unwrapping Advent hardcover standing on a wood table beside a lit candle, coffee mug, knit throw, and a lit Christmas tree" /></div>
         <div class="lifestyle-copy">
           <div class="eyebrow">A quieter Christmas</div>
           <h2 class="head-sub">Make a little room for what matters most.</h2>
